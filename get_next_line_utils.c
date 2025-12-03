@@ -48,7 +48,7 @@ char	*ft_strjoin_free(char *s1, char const *s2)
 
 	ns = malloc(ft_strlgnl(s1) + ft_strlgnl(s2) + 1);
 	if (!ns)
-		return (NULL);
+		return (free(s1), NULL);
 	i = 0;
 	while (s1 && s1[i])
 	{
